@@ -1,0 +1,86 @@
+{% extends "base.html" %} {% block title %}Submit Fact File{% endblock %}
+
+{%block content %}
+
+<form method = "POST">
+    <h3 align = "centre">Submit Fact File</h3>
+    <div class="form-group">
+       <label for="email">Email Address</label>
+        <input
+            type="text"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+
+        />
+    </div>
+    <div class="form-group">
+       <label for="firstname">First Name</label>
+        <input
+            type="text"
+            class="form-control"
+            id="firstname"
+            name="firstname"
+            placeholder="Enter First Name"
+
+        />
+    </div>
+    <div class="form-group">
+       <label for="middlename">Middle Name</label>
+        <input
+            type="text"
+            class="form-control"
+            id="middlename"
+            name="middlename"
+            placeholder="Enter Middle Name"
+        />
+    </div>
+    <div class="form-group">
+       <label for=lastname>Last Name</label>
+        <input
+            type="text"
+            class="form-control"
+            id="lastname"
+            name="lastname"
+            placeholder="Enter Last Name"
+        />
+    </div>
+    <div class="form-group">
+       <label for=age>Age</label>
+        <input
+            type="text"
+            class="form-control"
+            id="Age"
+            name="Age"
+            placeholder="Enter Age"
+        />
+    </div>
+    <div class="form-group">
+       <label for=Birthday>Birthday</label>
+        <input
+            type="text"
+            class="form-control"
+            id="Birthday"
+            name="Birthday"
+            placeholder="Enter Birthday"
+        />
+    </div>
+        <div class="form-group">
+       <label for=extrainfo>Extra Info</label>
+        <input
+            type="text"
+            class="form-control"
+            id="extrainfo"
+            name="extrainfo"
+            placeholder="Enter Any Extra Info You Want To Add"
+        />
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+{% endblock %}
