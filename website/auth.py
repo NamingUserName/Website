@@ -6,10 +6,6 @@ from . import db
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/Toby')
-def toby():
-    return render_template("Toby-Burton.html", user=current_user)
-
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
